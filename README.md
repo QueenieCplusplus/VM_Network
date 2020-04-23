@@ -13,7 +13,7 @@ VMs are isolated, even when they are running on the same (VM) host, and are comm
             |   ---------------------                             |
             |       |     |                                       |
             |       |     |                                       |
-            |       |     |                                       |
+            |       |     |            Groups...                  |
             |      --------------------    --------------------   |
             |      |  vSW             |    |  vSW             |   |
             |      --------------------    --------------------   |
