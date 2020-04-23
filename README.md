@@ -79,7 +79,7 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
 2. cfrm the  has connectivity with other 3 VMs.
 
-3. on Host, use below cmd to cfrm the PreProd has a VitualSubnetld property val of 0. 
+3. on Host1, use below cmd to cfrm the PreProd has a VitualSubnetld property val of 0. 
 
          Get-VMNetworkAdapter
 
@@ -93,7 +93,9 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
 8. as step 4, enter the index number (show ethernet) of Host1's Adapter & Host2's Adapter.
 
-9.
+9. on Host1, use below cmd to cfrm the PreProd has the Virtual Subnetltd property with a val of 5001, which is record in Step 6.
+
+         Get-VMNetworkAdapter
 
 10.
 
