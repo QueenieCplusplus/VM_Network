@@ -57,3 +57,27 @@ If the features also includes Virtual Hardware (vHard-Disk) supported by Hardwar
 Administrator may be asked to demo how to do a Network Virtualization, which aims at to seperate TEST & Preproduction ENVs that are using the same network infra.
 
 IT operator will ensure that the servers in both ENVs can use the "Same IP addr", and can communicate with other servers that are in the same ENV.
+
+* Demo Steps:
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+
+11.
