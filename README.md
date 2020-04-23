@@ -55,11 +55,15 @@ If the features also includes Virtual Hardware (vHard-Disk) supported by Hardwar
 
 * Netwok Features:
 
+ 1. NIC Team:
+ 
+ 2. other Advanced Usages:
 
-* Config
-
-
-* Test
+   (1) VLAN
+   
+   (2) DHCP
+   
+   (3) Bandwidth Mgmt
 
 # Apply Scenario
 
