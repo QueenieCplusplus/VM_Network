@@ -1,6 +1,27 @@
 # VM_Network
 Hyper-V
 
+      ------------------------------- Host ------------------
+      |                                                     |
+      |   ----------------------                            |
+      |   |                    |                            |
+      |   |    VM kernel       |                            |
+      |   |      |             |                            |
+      |   |   vNIC (2-4 ports) |                            |
+      |   ---------------------                             |
+      |       |     |                                       |
+      |       |     |                                       |
+      |       |     |                                       |
+      |      --------------------    --------------------   |
+      |      |  vSW             |    |  vSW             |   |
+      |      --------------------    --------------------   |
+      |        |  |                     |  |                |
+      |     NIC of Host             NIC of Host             |
+      |------- |  | ------------------- |  |----------------|
+      
+                                                         
+
+
 VMs are isolated, even when they are running on the same (VM) host, and are communicate with others and each other only over the network.
 
 
