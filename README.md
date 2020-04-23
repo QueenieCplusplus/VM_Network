@@ -7,8 +7,8 @@ VMs are isolated, even when they are running on the same (VM) host, and are comm
             |                                                     |
             |   ----------------------                            |
             |   |                    |                            |
-            |   |    VM kernel       |                            |
-            |   |      |             |                            |
+            |   |    VM1 kernel      |                            |
+            |   |      |             | ....  VMn                  |
             |   |   vNIC (2-4 ports) |                            |
             |   ---------------------                             |
             |       |     |                                       |
@@ -22,13 +22,14 @@ VMs are isolated, even when they are running on the same (VM) host, and are comm
             |------- |  | ------------------- |  |----------------|
                  _____________
                 |             | 
-                | physical SW | -------- (another IP addr)
+                | physical SW | -------- (another IP addr) ----- Pro ENV
                 |_____________|
                     |          \
                     |           \
                 (Single IP adde) \
-               Internet         shared storage
-
+               Internet      shared storage
+                    |
+                Test ENV
 
 VMware or Hyper-V includes vSW playing a role as NIC (網路卡網孔), which enable basic network Packet-Forward and Support for Network Virtualization.
 
@@ -60,11 +61,11 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
 * Demo Steps:
 
-1.
+1. ping IP addresses to different ENV to diff ports of NIC.
 
-2.
+2. cfrm the  port has connectivity with other 3 VMs.
 
-3.
+3. 
 
 4.
 
