@@ -3,7 +3,7 @@ Hyper-V
 
 VMs are isolated, even when they are running on the same (VM) host, and are communicate with others and each other only over the network.
 
-            ------------------------------- Host ------------------
+            ------------------------------- Host 1 ----------------
             |                                                     |
             |   ----------------------                            |
             |   |                    |                            |
@@ -20,16 +20,24 @@ VMs are isolated, even when they are running on the same (VM) host, and are comm
             |        |  |                     |  |                |
             |     NIC of Host             NIC of Host             |
             |------- |  | ------------------- |  |----------------|
-                 _____________
+                     |  |                     |  |
+                 PrePro Pro                 Test1 Test2 
+                  
+            
+                 ____|__|______
                 |             | 
-                | physical SW | -------- (another IP addr) ----- Pro ENV
-                |_____________|
+                | physical SW | ------ Host 2 
+                |             | 
+                |_____________| 
                     |          \
                     |           \
                 (Single IP adde) \
                Internet      shared storage
                     |
-                Test ENV
+                    |
+                
+                Internet
+               
 
 VMware or Hyper-V includes vSW playing a role as NIC (網路卡網孔), which enable basic network Packet-Forward and Support for Network Virtualization.
 
@@ -61,15 +69,23 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
 * Demo Steps:
 
-1. ping IP addresses to different ENV to diff ports of NIC.
+1. ping IP addresses to different ports named ENV.
 
-2. cfrm the  port has connectivity with other 3 VMs.
+         PreProd$
+         
+               to Test1 10.0.0.16
+               to Prod 10.0.0.25
+               to Test2 10.0.0.26
 
-3. 
+2. cfrm the  has connectivity with other 3 VMs.
 
-4.
+3. on Host, use below cmd to cfrm the PreProd has a VitualSubnetld property val of 0. 
 
-5.
+         Get-VMNetworkAdapter
+
+4. to determine the Ethernet index num for the above mentioned adapter on Host1 & Host2.
+
+5.  
 
 6.
 
