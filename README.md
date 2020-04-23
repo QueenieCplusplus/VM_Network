@@ -110,3 +110,7 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
                to Test2 10.0.0.26
 
 11. wait for reply, but only got reply from 10.0.0.25
+
+# Failover Cluster
+
+https://github.com/QueenieCplusplus/VM_Cluster
