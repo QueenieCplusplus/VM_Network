@@ -85,13 +85,13 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
 4. to determine the Ethernet index num for the above mentioned adapter on Host1 & Host2.
 
-5.  
+5. on host1, open file C:\LabFiles\Mod04\ConfigFile.ps1 in bash (powershell).
 
-6.
+6. to check config in the file. (Review the Variable!)
 
-7.
+7. Run Script.
 
-8.
+8. as step 4, enter the index number (show ethernet) of Host1's Adapter & Host2's Adapter.
 
 9.
 
