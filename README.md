@@ -73,7 +73,7 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
 * Demo Steps:
 
-1. ping IP addresses to different ports named ENV.
+1. on PreProd, ping IP addresses to different ports named ENV.
 
          PreProd$
          
@@ -81,7 +81,7 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
                to Prod 10.0.0.25
                to Test2 10.0.0.26
 
-2. cfrm the  has connectivity with other 3 VMs.
+2. cfrm the Prepod has connectivity with other 3 VMs.
 
 3. on Host1, use below cmd to cfrm the PreProd has a VitualSubnetld property val of 0. 
 
@@ -101,7 +101,7 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
          Get-VMNetworkAdapter
 
-10. ping IP addresses to different ports named ENV.
+10. on PreProd, ping IP addresses to different ports named ENV.
 
          PreProd$
          
