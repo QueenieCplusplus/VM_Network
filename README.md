@@ -105,4 +105,4 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
                to Prod 10.0.0.25
                to Test2 10.0.0.26
 
-11.
+11. wait for reply, but only got reply from 10.0.0.25
