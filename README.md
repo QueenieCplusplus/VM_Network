@@ -22,10 +22,11 @@ VMs are isolated, even when they are running on the same (VM) host, and are comm
             |------- |  | ------------------- |  |----------------|
                  _____________
                 |             | 
-                | physical SW |
+                | physical SW | -------- (another IP addr)
                 |_____________|
                     |          \
                     |           \
+                (Single IP adde) \
                Internet         shared storage
 
 
@@ -50,3 +51,9 @@ If the features also includes Virtual Hardware (vHard-Disk) supported by Hardwar
 
 
 * Test
+
+# Apply Scenario
+
+Administrator may be asked to demo how to do a Network Virtualization, which aims at to seperate TEST & Preproduction ENVs that are using the same network infra.
+
+IT operator will ensure that the servers in both ENVs can use the "Same IP addr", and can communicate with other servers that are in the same ENV.
