@@ -97,6 +97,12 @@ IT operator will ensure that the servers in both ENVs can use the "Same IP addr"
 
          Get-VMNetworkAdapter
 
-10.
+10. ping IP addresses to different ports named ENV.
+
+         PreProd$
+         
+               to Test1 10.0.0.16
+               to Prod 10.0.0.25
+               to Test2 10.0.0.26
 
 11.
